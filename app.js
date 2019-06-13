@@ -17,6 +17,13 @@ app.use(express.urlencoded({ extended: false }))
 app.engine('handlebars', hbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
+app.use((req, res, next)=>{
+    res.locals.nav1 = (req.path === '/')
+    res.locals.nav2 = (req.path === '/gigs')
+    res.locals.nav3 = (req.path === '/gigs/add')
+    next()
+})
+
 app.use('/gigs', require('./routes/gigs'))
 
 app.get('/', (req, res)=>{

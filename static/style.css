@@ -43,7 +43,7 @@ header nav li {
     border: 1px solid white;
 }
 
-header nav li:hover {
+header nav li:hover, header nav li.active {
     background-color: white;
     color:black;    
 }
@@ -86,9 +86,14 @@ main {
     font-weight: bold;
 }
 
+.search-text {
+    margin-top:40px;
+    font-size:1.2em;
+}
+
 .search-bar {
     width:70%;
-    margin:40px auto;
+    margin:auto;
     border:1px solid black;
     overflow: hidden;
     padding:0;

@@ -16,9 +16,9 @@
         <span class="logo"><i class="fas fa-code"></i> Code Gigs</span>
         <nav>
             <ul>
-                <a href="/"><li>Home</li></a>
-               <a href="/gigs"><li>All Gigs</li></a>
-               <a href="/gigs/add"><li>Add Gig</li></a>
+                <a href="/"><li {{#if nav1}}class="active"{{/if}}>Home</li></a>
+                <a href="/gigs"><li {{#if nav2}}class="active"{{/if}}>All Gigs</li></a>
+                <a href="/gigs/add"><li {{#if nav3}}class="active"{{/if}}>Add Gig</li></a>
             </ul>
         </nav>
     </header>
