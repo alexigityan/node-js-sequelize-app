@@ -1,5 +1,9 @@
 {{#each errors}}
-    <p class="error">{{this}}</p>
+    <p class="error">
+        <i class="fas fa-exclamation-triangle"></i>
+        {{this}}
+        <i class="fas fa-exclamation-triangle"></i>
+    </p>
 {{/each}}
 
 {{#if successMsg}}
