@@ -1,0 +1,13 @@
+{{#each gigs}}
+    <div class="gig">
+        <div class="title">{{title}}</div>
+        <div class="description">{{description}}</div>
+        <div class="details">
+            <p class="budget">Budget: {{budget}} $</p>
+            <p class="technologies">Technologies: {{technologies}}</p>
+            <p class="email">Email: {{contact_email}}</p>
+        </div>
+    </div>
+{{else}}
+    <h2> No gigs found. </h4>
+{{/each}}
